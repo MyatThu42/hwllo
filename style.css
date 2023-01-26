@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#439A97;
+    font-family: sans-serif;
+    color: blueviolet;
+
+}
+
+img{
+    display: inline-block;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover; 
+    border-radius: 0.5rem;
+    margin-bottom: 2rem; 
+    
+}
+
+.image-container{
+    width: 90vw;
+    margin: 0 auto;
+    min-width: 40px; 
+    max-width: 1170px;
+    padding: 5rem 0;
+}
+
+.nav-var{
+    background: #91D8E4;
+    border-radius: .7rem;
+    grid-template-rows: auto 3fr;
+}
+
+.btn{
+    padding: 1rem 0;
+    border: none;
+    font-size: 1rem;
+    background-color: #B2B2B2;
+    cursor: pointer;
+    transition: all .3s linear;
+    letter-spacing: 0.3rem;
+
+}
+
+.btn-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn:nth-child(1){
+    border-top-left-radius: .6rem;
+}
+
+.btn:nth-child(3){
+    border-top-right-radius: .6rem;
+}
+
+.btn:hover{
+background-color: #3C4048;
+color: white;
+
+}
+
+.about-theirself{
+    padding: 0 2rem;
+}
+
+@media (min-width:922px) {
+    .image-container{
+        margin: 0;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.self{
+    display: none;
+
+}
+
+.self.live{
+    display: block;
+}
+
+.btn.live{
+    background-color: #91D8E4 ;
+}
